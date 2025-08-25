@@ -681,3 +681,11 @@ button,
         opacity: 0;
     }
 }
+
+.edu-logo {
+    width: 100px;
+    /* غير الحجم اللي يناسبك */
+    height: auto;
+    border-radius: 8px;
+    /* لو عايز حواف ناعمة */
+}
