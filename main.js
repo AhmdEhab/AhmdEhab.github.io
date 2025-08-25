@@ -227,3 +227,31 @@
     // ملاحظة: يفضّل تحط الكود ده في style.css:
     // @keyframes ripple { to { transform: scale(4); opacity: 0; } }
 })();
+
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    status.className = "form-status"; // reset
+    status.style.display = "block";
+    status.textContent = "⏳ Sending...";
+
+    try {
+        const res = await fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+            headers: { Accept: "application/json" }
+        });
+
+        if (res.ok) {
+            form.reset();
+            status.className = "form-status success";
+            status.textContent = "✅ رسالتك اتبعتت بنجاح!";
+        } else {
+            status.className = "form-status error";
+            status.textContent = "❌ حصل خطأ، جرب تاني.";
+        }
+    } catch {
+        status.className = "form-status error";
+        status.textContent = "⚠️ مشكلة في الاتصال. حاول تاني.";
+    }
+});
