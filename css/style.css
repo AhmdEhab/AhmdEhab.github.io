@@ -1022,3 +1022,15 @@ select:-webkit-autofill {
     -webkit-text-fill-color: #fff !important;
     caret-color: #fff !important;
 }
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
