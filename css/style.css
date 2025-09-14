@@ -1006,6 +1006,7 @@ button,
     color: #fff !important;
     border-color: #007bff;
 }
+
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -1023,5 +1024,106 @@ video {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+    }
+}
+
+/* --- Services Section --- */
+.services-section {
+    padding: 4rem 2rem;
+    background: var(--bg);
+    text-align: center;
+}
+
+.services-section .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: var(--accent);
+    /* زي باقي العناوين */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    max-width: var(--container);
+}
+
+.services-list li {
+    background: var(--panel);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.services-list li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.services-list img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s;
+}
+
+.services-list li:hover img {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.services-list h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.6rem 0 0.8rem;
+    color: var(--text);
+}
+
+.services-list p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    .services-list li {
+        padding: 1.5rem 1rem;
+    }
+
+    .services-list img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .services-list h3 {
+        font-size: 1.1rem;
+    }
+
+    .services-list p {
+        font-size: 0.9rem;
     }
 }
