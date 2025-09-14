@@ -27,7 +27,6 @@ body {
     background: var(--bg);
 }
 
-/* ===== Topbar ===== */
 .topbar {
     position: sticky;
     top: 0;
@@ -68,7 +67,6 @@ body {
     background: #1a1a21;
 }
 
-/* ===== Hero ===== */
 .hero {
     background: var(--bg);
     padding: 3.5rem 0 4rem;
@@ -175,7 +173,7 @@ body {
     background: #1a1a21;
 }
 
-/* Portrait with ring + glow */
+
 .hero-portrait {
     display: grid;
     place-items: center;
@@ -916,15 +914,11 @@ button,
 }
 
 
-/* === About Section (match other boxes) === */
-/* === About Section (match other boxes) === */
-/* === About Section (exact same as other boxes) === */
 .about-card {
     background: var(--panel);
-    /* نفس خلفية البوكسات */
+
     border-radius: var(--radius);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-    /* نفس اللي مستخدم في project-card */
     padding: 1.8rem;
     color: var(--text);
     max-width: 800px;
@@ -1006,15 +1000,12 @@ button,
     outline: none !important;
 }
 
-/* وقت الفوكس */
 #contact-form input:focus,
 #contact-form textarea:focus {
     background-color: #222 !important;
     color: #fff !important;
     border-color: #007bff;
 }
-
-/* إلغاء لون الـ autofill */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {

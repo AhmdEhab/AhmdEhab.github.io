@@ -21,22 +21,21 @@
         const roleEl = document.getElementById("job-role");
 
         function showRole() {
-            roleEl.style.opacity = 0; // fade out
+            roleEl.style.opacity = 0;
             setTimeout(() => {
                 roleEl.textContent = roles[index].text;
-                roleEl.style.color = roles[index].color; // يغير اللون كمان
-                roleEl.style.opacity = 1; // fade in
+                roleEl.style.color = roles[index].color;
+                roleEl.style.opacity = 1;
                 index = (index + 1) % roles.length;
             }, 500);
         }
 
-        showRole(); // أول مرة
-        setInterval(showRole, 3000); // كل 3 ثواني
+        showRole();
+        setInterval(showRole, 3000);
     });
 </script>
 
 <body>
-    <!-- Top Nav (minimal, to match the screenshot) -->
     <header class="topbar">
         <div class="container">
 
@@ -108,7 +107,8 @@
             </div>
 
             <div class="hero-portrait">
-                <img src="images/WhatsApp Image 2025-08-20 at 15.46.49_12aa533a.jpg" alt="Portrait of Ahmed Ehab" />
+                <img src="v:\FIRST_HTML\images\WhatsApp Image 2025-09-13 at 23.51.27_42253c59.jpg"
+                    alt="Portrait of Ahmed Ehab" />
             </div>
         </div>
     </section>
@@ -241,7 +241,6 @@
                     Awarded 1st place in the University Scientific Conference for my project
                     excellence and outstanding performance.
                 </p>
-                <!-- Button with link -->
                 <a href=https://www.linkedin.com/posts/ahmed-ehab-996241341_alryadauniversity-projectmilestone-certificateachieved-activity-7325933894791307264-cWxZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF1tcJABMQsajHpCqeJt6BEUN02FaqId8ks
                     target="_blank" class="btn">
                     View Certificate
@@ -253,7 +252,6 @@
                     Participated in the Egyptian Collegiate Programming Contest (ECPC)
                     and earned a certificate of participation.
                 </p>
-                <!-- يفتح في تاب جديدة -->
                 <a href="images/2026-ECPC Q 2-Ahmed Ehab-PLACE.pdf" target="_blank" class="btn">
                     View Certificate
                 </a>
