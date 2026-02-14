@@ -348,16 +348,174 @@ section h2 {
     }
 }
 
-/* Responsive */
+
+/* Responsive Design - Tablet and Below Only */
+
+/* Tablet (1024px and below) */
 @media (max-width: 1024px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
+    .hero .container {
+        grid-template-columns: 1fr !important;
+        gap: 3rem !important;
+    }
+
+    .hero-copy {
         text-align: center;
-        gap: 4rem;
+    }
+
+    .hero-copy .eyebrow {
+        justify-content: center !important;
+    }
+
+    .hero-copy .cta {
+        justify-content: center !important;
+    }
+
+    .hero-copy .social {
+        justify-content: center !important;
     }
 
     .subtitle {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .hero-portrait {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-icons-list {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .topbar .container {
+        height: 70px;
+    }
+
+    .nav {
+        gap: 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .title {
+        font-size: clamp(2.5rem, 8vw, 4rem) !important;
+    }
+
+    .job-title {
+        font-size: 1.2rem !important;
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+
+    .subtitle {
+        font-size: 1rem !important;
+    }
+
+    .hero-copy .cta {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-copy .cta .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .skills-icons-list {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        gap: 1rem;
+    }
+
+    .skills-icons-list li {
+        padding: 1rem;
+    }
+
+    .hero-portrait {
+        max-width: 300px;
+    }
+
+    /* Hide navigation on very small screens */
+    .nav {
+        display: none;
+    }
+
+    /* Show hamburger menu if exists */
+    .hamburger {
+        display: block !important;
+    }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    .title {
+        font-size: 2rem !important;
+    }
+
+    .job-title {
+        font-size: 1rem !important;
+    }
+
+    .subtitle {
+        font-size: 0.9rem !important;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+
+    .skills-icons-list {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .skills-icons-list li {
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-portrait {
+        max-width: 250px;
+    }
+
+    .hero-copy .social {
+        gap: 1rem !important;
+    }
+
+    .hero-copy .social li a {
+        width: 45px !important;
+        height: 45px !important;
     }
 }

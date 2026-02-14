@@ -6,8 +6,8 @@ const Testimonials = () => {
     const testimonials = [
         {
             quote: '“Ahmed’s dedication and innovative approach were pivotal in securing first place at the Scientific Conference. A standout talent.”',
-            name: 'Prof. Yahia Elhalwagi',
-            role: 'Dean of Faculty',
+            name: 'Eng. Ahmed Kamal',
+            role: 'Software Engineer',
             color: '#3b82f6'
         },
         {
@@ -18,7 +18,7 @@ const Testimonials = () => {
         },
         {
             quote: '“Working with Ahmed is seamless. He consistently delivers high-quality results ahead of schedule.”',
-            name: 'Mazen Mahmoud',
+            name: 'Hussien Mohamed',
             role: 'Collaborator',
             color: '#3b82f6'
         },

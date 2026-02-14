@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { Mail, Github, Linkedin, Instagram, Download, ChevronRight, Sparkles } from 'lucide-react';
 import { useTypewriter } from '../hooks/useTypewriter';
+import resume from '../assets/resume.pdf';
 
 const Hero = () => {
     const role = useTypewriter(['Mobile Developer', 'QA Engineer', 'Problem Solver', 'Aspiring Developer'], 80, 2000);
@@ -87,7 +88,7 @@ const Hero = () => {
                             <a className="btn ghost btn-flash" href="#contact" style={{ minWidth: '180px' }}>
                                 Contact Me
                             </a>
-                            <a className="btn ghost btn-flash" href="#" download style={{ minWidth: '180px' }}>
+                            <a className="btn ghost btn-flash" href={resume} download="Ahmed_Ehab_CV.pdf" style={{ minWidth: '180px' }}>
                                 Download CV <Download size={20} style={{ marginLeft: '8px' }} />
                             </a>
                         </div>
