@@ -1,0 +1,92 @@
+/* ===== Theme tokens (Restored) ===== */
+:root {
+  --bg: #0b0b0d;
+  --panel: #0f0f13;
+  --panel-2: #15151a;
+  --text-primary: #e7e7ea;
+  --text-secondary: #b2b2b8;
+  --text-tertiary: #8b8b92;
+  --accent: #6ea8ff;
+  --accent-secondary: #9b8cff;
+  --accent-gradient: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-bright: rgba(255, 255, 255, 0.15);
+  --radius: 14px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.btn.primary {
+  background: var(--accent-gradient);
+  color: #0b0b0d;
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(110, 168, 255, 0.3);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: #2a2a33;
+}
+
+.btn.ghost:hover {
+  background: var(--accent-gradient);
+  color: var(--bg);
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(155, 140, 255, 0.3);
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #1c1c22;
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
